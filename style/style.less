@@ -4,6 +4,10 @@ body {
   color: black;
 }
 
+a {
+  text-decoration: none
+}
+
 *:focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -12,7 +16,12 @@ header {
   background: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 
+  .navbar-brand {
+    margin-right: 38px;
+  }
+
   nav {
+    width: 100%;
     height: 100px;
   }
 
@@ -20,28 +29,57 @@ header {
     background: #FFFFFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
+    border: none;
+    padding: 56px 0 0;
+    position: relative;
+    top: -19px;
+    margin: 0;
+    z-index: 0;
 
     .dropdown-item {
       color: #333333;
-      font-size: 16px;
-      line-height: 13px;
+      font-size: 20px;
+      line-height: 23px;
+      padding: 9px 20px 9px 26px;
+      display: flex;
+      align-items: center;
 
       span {
         margin-right: 8px;
+        width: 25px;
+        display: inline-block;
+        text-align: center;
       }
+
     }
+
+    li {
+      margin-bottom: 10px;
+    }
+
   }
 
-  .navbar-light .navbar-nav .nav-link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #333333;
-    padding: 10px 22px;
+  .navbar-light .navbar-nav {
+    .nav-item {
+      &.dropdown {
+        a {
+          position: relative;
+          z-index: 1;
+        }
+      }
 
-    &:hover {
-      color: #0BAC4E
+      .nav-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        padding: 10px 22px;
+
+        &:hover {
+          color: #0BAC4E
+        }
+      }
     }
   }
 
@@ -82,4 +120,27 @@ header {
     }
   }
 
+}
+
+.home-banner {
+  padding-top: 60px;
+
+  .swiper-container{
+    width: 100%;
+  }
+
+  .block {
+    width: 100%;
+    background: linear-gradient(180deg, #F1F1FB 0%, #EBEBF5 100%);
+    position: relative;
+    box-shadow: 0 0 18.0727px rgba(0, 0, 0, 0.03);
+    border-radius: 18.0727px;
+    height: 254px;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
