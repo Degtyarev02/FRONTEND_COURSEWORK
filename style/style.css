@@ -29,7 +29,6 @@ header .dropdown-menu {
   position: relative;
   top: -19px;
   margin: 0;
-  z-index: 0;
 }
 header .dropdown-menu .dropdown-item {
   color: #333333;
