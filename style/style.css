@@ -34,7 +34,7 @@ header .dropdown-menu {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   border: none;
-  padding: 56px 0 0;
+  padding: 20px 0 0;
   position: relative;
   top: -19px;
   margin: 0;
@@ -227,5 +227,31 @@ header .menu-right .menu-user button {
   width: 13px;
   height: 13px;
   display: inline-block;
+}
+.home-products .products-wrapper .product .price {
+  margin-bottom: 14px;
+}
+.home-products .products-wrapper .product .price b {
+  font-weight: 500;
+  font-size: 18.1056px;
+  line-height: 23px;
+}
+.home-products .products-wrapper .product .price span {
+  font-size: 12.674px;
+  line-height: 23px;
+  color: #828282;
+  margin-left: 18px;
+}
+.home-products .products-wrapper .product .to-cart {
+  color: #FFFFFF;
+  background: #00AC4E;
+  border-radius: 4px;
+  width: 140px;
+  height: 38px;
+  line-height: 38px;
+  left: 223px;
+  top: 846px;
+  text-align: center;
+  padding: 9px 28px;
 }
 /*# sourceMappingURL=style.css.map */
