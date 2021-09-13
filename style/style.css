@@ -150,8 +150,29 @@ header .menu-right .menu-user button {
 .home-menu .container {
   overflow-x: hidden;
 }
+.home-menu .container .swiper-button-next:after,
+.home-menu .container .swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+  background-image: url("../img/arrownext.svg");
+  width: 14px;
+  height: 24px;
+}
+.home-menu .container .swiper-button-prev {
+  display: none;
+}
+.home-menu .container .swiper-button-next,
+.home-menu .container .swiper-container-rtl .swiper-button-prev {
+  right: 0;
+  justify-content: flex-end;
+  background: white;
+}
+.home-menu .container .swiper-button-prev,
+.home-menu .container .swiper-container-rtl .swiper-button-prev {
+  left: 0;
+}
 .home-menu .container .swiper-container-menu {
   position: relative;
+  overflow: hidden;
 }
 .home-menu .container .swiper-container-menu a {
   font-family: TT Hoves, serif;
@@ -159,6 +180,6 @@ header .menu-right .menu-user button {
   font-size: 23px;
   line-height: 27px;
   color: #4F4f4F;
-  width: auto!important;
+  width: auto !important;
 }
 /*# sourceMappingURL=style.css.map */

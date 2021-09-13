@@ -195,15 +195,41 @@ header {
   .container {
     overflow-x: hidden;
 
-    .swiper-container-menu{
+    .swiper-button-next:after,
+    .swiper-container-rtl .swiper-button-prev:after {
+      content: "";
+      background-image: url("../img/arrownext.svg");
+      width: 14px;
+      height: 24px;
+    }
+
+    .swiper-button-prev {
+      display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
+      right: 0;
+      justify-content: flex-end;
+      background: white;
+    }
+
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-prev {
+      left: 0;
+    }
+
+    .swiper-container-menu {
       position: relative;
-      a{
+      overflow: hidden;
+
+      a {
         font-family: TT Hoves, serif;
         text-transform: uppercase;
         font-size: 23px;
         line-height: 27px;
         color: #4F4f4F;
-        width: auto!important;
+        width: auto !important;
 
       }
     }
