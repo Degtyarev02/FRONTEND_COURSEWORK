@@ -182,4 +182,50 @@ header .menu-right .menu-user button {
   color: #4F4f4F;
   width: auto !important;
 }
+.home-products .row {
+  flex-direction: column;
+}
+.home-products .row .all_products {
+  margin: 30px 0 39px;
+}
+.home-products .products-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home-products .products-wrapper .product {
+  width: 205px;
+  margin-bottom: 56px;
+}
+.home-products .products-wrapper .product .img {
+  background-image: url(../img/imageproduct.svg);
+  background-color: #E6E6E6;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 125px;
+  overflow: hidden;
+}
+.home-products .products-wrapper .product .img img {
+  height: 100%;
+  width: 100%;
+}
+.home-products .products-wrapper .product .title {
+  margin: 9px 0;
+  color: #000000;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+.home-products .products-wrapper .product .description {
+  color: #333333;
+  font-size: 12.674px;
+  line-height: 19px;
+}
+.home-products .products-wrapper .product .rating span {
+  background: url(../img/star.svg);
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
