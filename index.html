@@ -89,7 +89,7 @@
         </div>
     </header>
 
-    <div class="section home-banner">
+    <section class=" home-banner">
         <div class="container">
             <div class="swiper swiper-container">
                 <div class="swiper-wrapper">
@@ -111,12 +111,54 @@
                         <p>Пельмени с рыбой</p>
                         <a class="btn btn-secondary" href="#">Добавить в корзину</a>
                     </div>
-
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="home-menu">
+        <div class="container">
+            <div class="swiper-container-menu">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide">
+                        <span>Супы</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Хачапури</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Холодные закуски</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Хинкали</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Шашлык</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Соусы</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Салаты</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Горячие блюда</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Гарнир</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Десерты</span>
+                    </a>
+                    <a href="" class="swiper-slide">
+                        <span>Напитки</span>
+                    </a>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
 
 </div>
 <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
@@ -127,10 +169,21 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script>
     const mySwiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
         pagination: {
-            el: ".swiper-pagination",
+            el: ".swiper-pagination"
         },
     })
+
+    const menuSwiper = new Swiper(".swiper-container-menu", {
+        slidesPerView: 'auto',
+        spaceBetween: 95,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
 </script>
 </body>
 </html>

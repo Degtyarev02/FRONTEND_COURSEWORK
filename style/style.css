@@ -105,9 +105,10 @@ header .menu-right .menu-user button {
 }
 .home-banner {
   padding-top: 60px;
+  padding-bottom: 25px;
 }
 .home-banner .swiper-container {
-  width: 80%;
+  width: 100%;
 }
 .home-banner .block {
   width: 100%;
@@ -145,5 +146,19 @@ header .menu-right .menu-user button {
   font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
+}
+.home-menu .container {
+  overflow-x: hidden;
+}
+.home-menu .container .swiper-container-menu {
+  position: relative;
+}
+.home-menu .container .swiper-container-menu a {
+  font-family: TT Hoves, serif;
+  text-transform: uppercase;
+  font-size: 23px;
+  line-height: 27px;
+  color: #4F4f4F;
+  width: auto!important;
 }
 /*# sourceMappingURL=style.css.map */
