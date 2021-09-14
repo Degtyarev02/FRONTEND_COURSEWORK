@@ -92,7 +92,8 @@ header .menu-right .menu-contact a {
   line-height: 21px;
 }
 header .menu-right .menu-contact a img {
-  margin-right: 5px;
+  margin-right: 10px;
+  padding-bottom: 4px;
 }
 header .menu-right .menu-user a,
 header .menu-right .menu-user button {
@@ -140,12 +141,20 @@ header .menu-right .menu-user button {
   font-size: 19.88px;
   line-height: 24px;
   color: #828282;
+  padding-bottom: 30px;
 }
-.home-banner .block a {
+.home-banner .block .cart_button {
+  display: block;
+  width: 217.47px;
+  height: 52.55px;
+  color: #FFFFFF;
+  background: #0BAC4E;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
 }
 .home-menu .container {
   overflow-x: hidden;
@@ -244,7 +253,7 @@ header .menu-right .menu-user button {
 }
 .home-products .products-wrapper .product .to-cart {
   color: #FFFFFF;
-  background: #00AC4E;
+  background: #0BAC4E;
   border-radius: 4px;
   width: 140px;
   height: 38px;
