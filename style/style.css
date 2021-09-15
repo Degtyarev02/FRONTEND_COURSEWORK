@@ -145,8 +145,8 @@ header .menu-right .menu-user button {
 }
 .home-banner .block .cart_button {
   display: block;
-  width: 217.47px;
-  height: 52.55px;
+  width: 217px;
+  height: 52px;
   color: #FFFFFF;
   background: #0BAC4E;
   text-align: center;
@@ -262,5 +262,72 @@ header .menu-right .menu-user button {
   top: 846px;
   text-align: center;
   padding: 9px 28px;
+}
+.delivery {
+  padding: 70px 0;
+}
+.delivery .container {
+  display: flex;
+  justify-content: center;
+}
+.delivery .block {
+  width: 80%;
+  height: 250px;
+  background-color: #F2F2F2;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.03);
+  border-radius: 18px;
+  padding: 30px 0 30px 40px;
+  background-image: url(../img/van.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 450px;
+}
+.delivery .block .title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #4F4f4F;
+  padding-bottom: 34px;
+}
+.delivery .block a {
+  display: block;
+  width: 171px;
+  height: 52px;
+  color: #FFFFFF;
+  background: #0BAC4E;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer {
+  background: #0BAC4E;
+  padding: 34px 0;
+}
+footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wrapper .footer-left .phones {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wrapper .footer-left .phones .phone-item {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-wrapper .footer-left .phones .phone-item span {
+  font-size: 12px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+footer .footer-wrapper .footer-left .phones .phone-item a {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 39px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
