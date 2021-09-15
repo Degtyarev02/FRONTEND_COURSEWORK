@@ -385,6 +385,15 @@ header {
 footer {
   background: #0BAC4E;
   padding: 34px 0;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+    &:hover{
+      color: #ffffff;
+    }
+  }
+
 
   .footer-wrapper {
     display: flex;
@@ -394,15 +403,20 @@ footer {
       .phones {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 15px;
 
         .phone-item {
           display: flex;
           flex-direction: column;
+          margin-right: 60px;
+
+          &:last-child {
+            margin-right: 0;
+          }
 
           span {
             font-size: 12px;
             line-height: 32px;
-            color: #FFFFFF;
 
           }
 
@@ -410,10 +424,49 @@ footer {
             font-weight: 500;
             font-size: 19px;
             line-height: 39px;
-            color: #FFFFFF;
-
           }
         }
+      }
+      .work-time{
+        font-weight: normal;
+        font-size: 15.4259px;
+        line-height: 32px;
+        padding-bottom: 10px;
+      }
+
+      .work-email{
+        font-weight: normal;
+        font-size: 18.511px;
+        line-height: 32px;
+      }
+    }
+    .footer-center{
+      .social{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        font-variant: small-caps;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        a {
+          padding-bottom: 25px;
+        }
+      }
+    }
+    .footer-right{
+      .registration{
+        display: flex;
+        align-items: center;
+      }
+      a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+      }
+      img{
+        padding-right: 7px;
       }
     }
   }
