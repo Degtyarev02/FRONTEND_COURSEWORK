@@ -9,5 +9,9 @@
     <orderEntry type="library" name="api" level="application" />
     <orderEntry type="library" name="bootstrap-autocomplete" level="application" />
     <orderEntry type="library" name="swiper" level="application" />
+    <orderEntry type="library" name="bootstrap-autocomplete" level="application" />
+    <orderEntry type="library" name="870b49f80b" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>
