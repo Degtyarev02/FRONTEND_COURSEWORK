@@ -144,16 +144,16 @@ header .menu-right .menu-user button {
   padding-bottom: 30px;
 }
 .home-banner .block .cart_button {
-  display: block;
+  display: inline;
   width: 217px;
   height: 52px;
   color: #FFFFFF;
   background: #0BAC4E;
   text-align: center;
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 }
 .home-menu .container {
