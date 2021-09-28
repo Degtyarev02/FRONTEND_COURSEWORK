@@ -197,7 +197,8 @@ header .menu-right .menu-user button {
   width: auto !important;
   padding: 8px 16px;
 }
-.home-menu .container .swiper-container-menu a:active {
+.home-menu .container .swiper-container-menu a:active,
+.home-menu .container .swiper-container-menu a:hover {
   background: #0BAC4E;
   color: white;
   border-radius: 5px;
