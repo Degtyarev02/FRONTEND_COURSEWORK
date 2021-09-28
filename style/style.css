@@ -185,6 +185,8 @@ header .menu-right .menu-user button {
 .home-menu .container .swiper-container-menu {
   position: relative;
   overflow: hidden;
+  left: -16px;
+  width: calc(100% + 16px);
 }
 .home-menu .container .swiper-container-menu a {
   font-family: TT Hoves, serif;
@@ -193,6 +195,12 @@ header .menu-right .menu-user button {
   line-height: 27px;
   color: #4F4f4F;
   width: auto !important;
+  padding: 8px 16px;
+}
+.home-menu .container .swiper-container-menu a:active {
+  background: #0BAC4E;
+  color: white;
+  border-radius: 5px;
 }
 .home-products .all_products {
   margin: 30px 0 39px;
@@ -378,5 +386,49 @@ footer .footer-wrapper .footer-right a {
 }
 footer .footer-wrapper .footer-right img {
   padding-right: 7px;
+}
+.green_btn {
+  background: #0BAC4E;
+  padding: 14px 30px;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.green_btn:hover {
+  color: white;
+  background: #099443;
+}
+.white_btn {
+  text-decoration: none;
+  color: #0BAC4E;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  margin-left: 60px;
+}
+.white_btn:hover {
+  color: #099443;
+}
+.page-container {
+  padding: 45px 0 60px;
+  min-height: calc(100vh - 50px);
+}
+.page-container .page-content-wrapper {
+  margin-bottom: 45px;
+}
+.page-container h1 {
+  padding-bottom: 25px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+.page-container p {
+  color: #828282;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
 }
 /*# sourceMappingURL=style.css.map */
