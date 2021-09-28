@@ -118,6 +118,17 @@
                                 <input type="text" name="qty" id="qty" maxlength="12"/>
                                 <span class="plus button">+</span>
                             </div>
+                            <div class="to-pay">
+                                <span>Итого к оплате</span>
+                                <b>1 000 ₽</b>
+                            </div>
+                            <div class="pay-block">
+                                <button class="pay">Купить</button>
+                                <button class="card-add">
+
+                                </button>
+
+                            </div>
                         </div>
 
                     </div>
@@ -181,9 +192,9 @@
         crossorigin="anonymous"></script>
 <script>
     jQuery(function () {
-    var j = jQuery;
-    var addInput = '#qty';
-    var n = 1;
+    let j = jQuery;
+    let addInput = '#qty';
+    let n = 1;
     j(addInput).val(n);
 
     j('.plus').on('click', function () {
