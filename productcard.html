@@ -90,47 +90,44 @@
         <div class="container">
             <div class="card-top">
                 <div class="card-img">
-
+                    <img src="img/food3.jpg" alt="">
                 </div>
                 <div class="card-sidebar">
                     <div class="title">
-                        <h1>Говядина 250гр</h1>
-                        <div class="rating">
-                            <span class="active"></span>
-                            <span class="active"></span>
-                            <span class="active"></span>
-                            <span class="active"></span>
-                            <span></span>
+                        Пельмени 250гр
+                    </div>
+                    <div class="rating">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span></span>
+                    </div>
+                    <div class="reviews">
+                        Кол-во отзывов: 0
+                    </div>
+                    <div class="price">
+                        <span>Цена за кг:</span><b>1 000 ₽</b>
+                    </div>
+                    <div class="price">
+                        <span>Кол-во шт в упаковке:</span><b>4 шт.</b>
+                    </div>
+                    <div class="price">
+                        <span>Количество</span>
+                        <div class="input-range">
+                            <span class="min button">-</span>
+                            <input type="text" name="qty" id="qty" maxlength="12"/>
+                            <span class="plus button">+</span>
                         </div>
-                        <div class="reviews">
-                            Кол-во отзывов: 0
-                        </div>
-                        <div class="price">
-                            <span>Цена за кг:</span><b>1 000 ₽</b>
-                        </div>
-                        <div class="price">
-                            <span>Кол-во шт в упаковке:</span><b>4 шт.</b>
-                        </div>
-                        <div class="price">
-                            <span>Количество</span>
-                            <div class="input-range">
-                                <span class="min button">-</span>
-                                <input type="text" name="qty" id="qty" maxlength="12"/>
-                                <span class="plus button">+</span>
-                            </div>
-                            <div class="to-pay">
-                                <span>Итого к оплате</span>
-                                <b>1 000 ₽</b>
-                            </div>
-                            <div class="pay-block">
-                                <button class="pay">Купить</button>
-                                <button class="card-add">
-
-                                </button>
-
-                            </div>
-                        </div>
-
+                    </div>
+                    <div class="to-pay">
+                        <span>Итого к оплате</span>
+                        <b>1 000 ₽</b>
+                    </div>
+                    <div class="pay-block">
+                        <button class="pay">Купить</button>
+                        <button class="card-add">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -143,7 +140,6 @@
                 <h4 class="title"> Lorem ipsum dolor sit amet
                     <br> consectetur adipiscing elit.</h4>
                 <a href="#">Кнопка</a>
-
             </div>
         </div>
     </section>
@@ -192,20 +188,20 @@
         crossorigin="anonymous"></script>
 <script>
     jQuery(function () {
-    let j = jQuery;
-    let addInput = '#qty';
-    let n = 1;
-    j(addInput).val(n);
+        let j = jQuery;
+        let addInput = '#qty';
+        let n = 1;
+        j(addInput).val(n + ' шт.');
 
-    j('.plus').on('click', function () {
-        j(addInput).val(++n);
-    })
+        j('.plus').on('click', function () {
+            j(addInput).val(++n + ' шт.');
+        })
 
-    j('.min').on('click', function () {
-        if (n > 0) {
-            j(addInput).val(--n);
-        }
-    });
-});</script>
+        j('.min').on('click', function () {
+            if (n > 0) {
+                j(addInput).val(--n + ' шт.');
+            }
+        });
+    });</script>
 </body>
 </html>

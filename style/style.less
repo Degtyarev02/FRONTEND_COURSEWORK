@@ -1,4 +1,4 @@
- // compress: false
+// compress: false
 
 body {
   font-family: 'TT Norms', serif;
@@ -28,7 +28,7 @@ a {
 header {
   background: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-  position: sticky!important;
+  position: sticky !important;
   top: 0;
   z-index: 4;
 
@@ -248,7 +248,8 @@ header {
         color: #4F4f4F;
         width: auto !important;
         padding: 8px 16px;
-        &:active, &:hover{
+
+        &:active, &:hover {
           background: #0BAC4E;
           color: white;
           border-radius: 5px;
@@ -400,9 +401,11 @@ footer {
   background: #0BAC4E;
   padding: 34px 0;
   color: #ffffff;
+
   a {
     color: #ffffff;
-    &:hover{
+
+    &:hover {
       color: #ffffff;
     }
   }
@@ -440,21 +443,23 @@ footer {
           }
         }
       }
-      .work-time{
+
+      .work-time {
         font-weight: normal;
         font-size: 15.4259px;
         line-height: 32px;
         padding-bottom: 10px;
       }
 
-      .work-email{
+      .work-email {
         font-weight: normal;
         font-size: 18.511px;
         line-height: 32px;
       }
     }
-    .footer-center{
-      .social{
+
+    .footer-center {
+      .social {
         font-weight: 500;
         font-size: 15px;
         line-height: 32px;
@@ -463,74 +468,241 @@ footer {
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
+
         a {
           padding-bottom: 25px;
         }
       }
     }
-    .footer-right{
-      .registration{
+
+    .footer-right {
+      .registration {
         display: flex;
         align-items: center;
       }
-      a{
+
+      a {
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
       }
-      img{
+
+      img {
         padding-right: 7px;
       }
     }
   }
 }
 
- .green_btn{
-   background: #0BAC4E;
-   padding: 14px 30px;
-   border-radius: 7px;
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 21px;
-   text-align: center;
-   color: #FFFFFF;
-   &:hover{
-     color: white;
-     background: darken(#0BAC4E, 5%);
-   }
- }
+.green_btn {
+  background: #0BAC4E;
+  padding: 14px 30px;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
 
- .white_btn{
-   text-decoration: none;
-   color: #0BAC4E;
-   font-size: 22px;
-   line-height: 29px;
-   text-align: center;
-   margin-left: 60px;
+  &:hover {
+    color: white;
+    background: darken(#0BAC4E, 5%);
+  }
+}
 
-   &:hover{
-     color: darken(#0BAC4E, 5%);
-   }
- }
+.white_btn {
+  text-decoration: none;
+  color: #0BAC4E;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  margin-left: 60px;
 
-.page-container{
+  &:hover {
+    color: darken(#0BAC4E, 5%);
+  }
+}
+
+.page-container {
   padding: 45px 0 60px;
   min-height: calc(100vh - 50px);
-  .page-content-wrapper{
+
+  .page-content-wrapper {
     margin-bottom: 45px;
   }
-  h1{
+
+  h1 {
     padding-bottom: 25px;
     font-weight: 500;
     font-size: 28px;
     line-height: 33px
   }
-  p{
+
+  p {
     color: #828282;
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
   }
 
+}
+
+.card {
+  padding: 60px 0;
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+
+    .card-img {
+      width: 67%;
+      height: 430px;
+      background: #F9F9F9;
+
+      img {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+    .card-sidebar {
+      width: 26%;
+      background: #FFFFFF;
+      box-shadow: 0 0 27px rgba(0, 0, 0, 0.06);
+      border-radius: 15px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 23px;
+      }
+
+      .rating {
+        span {
+          background: url(../img/star.svg);
+          width: 13px;
+          height: 13px;
+          display: inline-block;
+        }
+      }
+
+      .reviews {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 19px;
+        color: #C6C6C6;
+      }
+
+      .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: #C6C6C6;
+        }
+
+        b {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+        }
+
+        .input-range {
+          width: 115px;
+          height: 42px;
+          background: #FCFCFC;
+          border: 0.9px solid #EBEBEB;
+          box-sizing: border-box;
+          border-radius: 9px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+
+          span.button {
+            width: 30%;
+            text-align: center;
+
+            &:active {
+              color: #0BAC4E;
+            }
+          }
+
+          input {
+            width: 40%;
+            text-align: center;
+            border: none;
+            background: none;
+          }
+        }
+      }
+
+      .to-pay {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        b {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #0BAC4E;
+        }
+
+      }
+
+      .pay-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pay {
+          width: 210px;
+          height: 40px;
+          background: #00AC4E;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #FFFFFF;
+          border: none;
+
+          &:active {
+            background: darken(#00AC4E, 5%);
+          }
+        }
+
+        .card-add {
+          border: none;
+          width: 50px;
+          height: 40px;
+          background: #00AC4E url(../img/shopping-cart-card-icon.svg) no-repeat center;
+          border-radius: 5px;
+        }
+      }
+
+
+    }
+  }
 }
 

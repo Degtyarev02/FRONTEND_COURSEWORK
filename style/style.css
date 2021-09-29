@@ -21,7 +21,7 @@ a {
 header {
   background: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-  position: sticky!important;
+  position: sticky !important;
   top: 0;
   z-index: 4;
 }
@@ -431,5 +431,136 @@ footer .footer-wrapper .footer-right img {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
+}
+.card {
+  padding: 60px 0;
+}
+.card .card-top {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-top .card-img {
+  width: 67%;
+  height: 430px;
+  background: #F9F9F9;
+}
+.card .card-top .card-img img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .card-top .card-sidebar {
+  width: 26%;
+  background: #FFFFFF;
+  box-shadow: 0 0 27px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-top .card-sidebar .title {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 23px;
+}
+.card .card-top .card-sidebar .rating span {
+  background: url(../img/star.svg);
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+}
+.card .card-top .card-sidebar .reviews {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  color: #C6C6C6;
+}
+.card .card-top .card-sidebar .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-top .card-sidebar .price span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C6C6C6;
+}
+.card .card-top .card-sidebar .price b {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+.card .card-top .card-sidebar .price .input-range {
+  width: 115px;
+  height: 42px;
+  background: #FCFCFC;
+  border: 0.9px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.card .card-top .card-sidebar .price .input-range span.button {
+  width: 30%;
+  text-align: center;
+}
+.card .card-top .card-sidebar .price .input-range span.button:active {
+  color: #0BAC4E;
+}
+.card .card-top .card-sidebar .price .input-range input {
+  width: 40%;
+  text-align: center;
+  border: none;
+  background: none;
+}
+.card .card-top .card-sidebar .to-pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-top .card-sidebar .to-pay span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.card .card-top .card-sidebar .to-pay b {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #0BAC4E;
+}
+.card .card-top .card-sidebar .pay-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-top .card-sidebar .pay-block .pay {
+  width: 210px;
+  height: 40px;
+  background: #00AC4E;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  border: none;
+}
+.card .card-top .card-sidebar .pay-block .pay:active {
+  background: #009342;
+}
+.card .card-top .card-sidebar .pay-block .card-add {
+  border: none;
+  width: 50px;
+  height: 40px;
+  background: #00AC4E url(../img/shopping-cart-card-icon.svg) no-repeat center;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
