@@ -549,6 +549,7 @@ footer {
 
 .card {
   padding: 60px 0;
+  border: none;
 
   .card-top {
     display: flex;
@@ -582,6 +583,7 @@ footer {
         font-weight: 700;
         font-size: 23px;
         line-height: 23px;
+        margin-bottom: -20px;
       }
 
       .rating {
@@ -698,6 +700,10 @@ footer {
           height: 40px;
           background: #00AC4E url(../img/shopping-cart-card-icon.svg) no-repeat center;
           border-radius: 5px;
+
+          &:active {
+            background: darken(#00AC4E, 5%) url(../img/shopping-cart-card-icon.svg) no-repeat center;
+          }
         }
       }
 

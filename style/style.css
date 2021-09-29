@@ -434,6 +434,7 @@ footer .footer-wrapper .footer-right img {
 }
 .card {
   padding: 60px 0;
+  border: none;
 }
 .card .card-top {
   display: flex;
@@ -464,6 +465,7 @@ footer .footer-wrapper .footer-right img {
   font-weight: 700;
   font-size: 23px;
   line-height: 23px;
+  margin-bottom: -20px;
 }
 .card .card-top .card-sidebar .rating span {
   background: url(../img/star.svg);
@@ -562,5 +564,8 @@ footer .footer-wrapper .footer-right img {
   height: 40px;
   background: #00AC4E url(../img/shopping-cart-card-icon.svg) no-repeat center;
   border-radius: 5px;
+}
+.card .card-top .card-sidebar .pay-block .card-add:active {
+  background: #009342 url(../img/shopping-cart-card-icon.svg) no-repeat center;
 }
 /*# sourceMappingURL=style.css.map */
