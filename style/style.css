@@ -444,6 +444,7 @@ footer .footer-wrapper .footer-right img {
   width: 67%;
   height: 430px;
   background: #F9F9F9;
+  border-radius: 15px;
 }
 .card .card-top .card-img img {
   border-radius: 15px;
