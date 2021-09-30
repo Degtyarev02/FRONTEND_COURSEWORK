@@ -568,4 +568,87 @@ footer .footer-wrapper .footer-right img {
 .card .card-top .card-sidebar .pay-block .card-add:active {
   background: #009342 url(../img/shopping-cart-card-icon.svg) no-repeat center;
 }
+.card .card-bottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-bottom .card-info {
+  width: 67%;
+}
+.card .card-bottom .card-sidebar {
+  width: 26%;
+  background: #FFFFFF;
+  box-shadow: 0 0 27px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-bottom .card-sidebar .title {
+  font-size: 15px;
+  line-height: 17px;
+}
+.card .card-bottom .card-sidebar .line {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.card .card-bottom .card-sidebar .line img {
+  margin-right: 15px;
+}
+.card .card-bottom .card-sidebar .range-slide {
+  margin-top: 32px;
+  margin-left: 15px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card-bottom .card-sidebar .range-slide .range-line {
+  width: 100%;
+  height: 3px;
+  background: #F2F2F2;
+  border-radius: 3px;
+  position: relative;
+}
+.card .card-bottom .card-sidebar .range-slide .range-line:before {
+  content: attr(data-mins);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+}
+.card .card-bottom .card-sidebar .range-slide .range-line:after {
+  content: attr(data-maxs);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  position: absolute;
+  top: -5px;
+  right: -40px;
+}
+.card .card-bottom .card-sidebar .range-slide .range-line .green-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00AC4E;
+  border-radius: 3px;
+  height: 100%;
+}
+.card .card-bottom .card-sidebar .range-slide .range-text {
+  font-weight: normal;
+  width: 300px;
+  line-height: 10px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 26px;
+}
 /*# sourceMappingURL=style.css.map */

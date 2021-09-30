@@ -706,9 +706,103 @@ footer {
           }
         }
       }
-
-
     }
   }
+
+  .card-bottom {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .card-info {
+      width: 67%;
+    }
+
+    .card-sidebar {
+      width: 26%;
+      background: #FFFFFF;
+      box-shadow: 0 0 27px rgba(0, 0, 0, 0.06);
+      border-radius: 15px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title{
+        font-size: 15px;
+        line-height: 17px;
+      }
+      .line {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        img{
+          margin-right: 15px;
+        }
+      }
+
+      .range-slide {
+        margin-top: 32px;
+        margin-left: 15px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .range-line {
+          width: 100%;
+          height: 3px;
+          background: #F2F2F2;
+          border-radius: 3px;
+          position: relative;
+
+          &:before {
+            content: attr(data-mins);
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            position: absolute;
+            top: -5px;
+            left: -15px;
+          }
+
+          &:after {
+            content: attr(data-maxs);
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            position: absolute;
+            top: -5px;
+            right: -40px;
+          }
+
+          .green-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #00AC4E;
+            border-radius: 3px;
+            height: 100%;
+          }
+        }
+
+        .range-text {
+          font-weight: normal;
+          width: 300px;
+          line-height: 10px;
+          font-size: 13px;
+          text-align: center;
+          margin-top: 20px;
+          margin-left: 26px;
+
+        }
+      }
+
+    }
+
+  }
+
 }
 
