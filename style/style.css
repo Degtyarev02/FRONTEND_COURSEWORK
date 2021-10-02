@@ -577,6 +577,50 @@ footer .footer-wrapper .footer-right img {
 .card .card-bottom .card-info {
   width: 67%;
 }
+.card .card-bottom .card-info .nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.card .card-bottom .card-info .nav-tabs .nav-link {
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 19px;
+  color: #828282;
+  border: none;
+  padding: 0;
+}
+.card .card-bottom .card-info .nav-tabs .nav-link.active {
+  border: none;
+  color: #00AC4E;
+}
+.card .card-bottom .card-info .nav-tabs .nav-link:hover {
+  border: none;
+}
+.card .card-bottom .card-info .tab-content .tab-pane .info {
+  margin-top: 40px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 19px;
+}
+.card .card-bottom .card-info .tab-content .tab-pane p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  color: #828282;
+}
+.card .card-bottom .card-info .tab-content .tab-pane .product_ul {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+.card .card-bottom .card-info .tab-content .tab-pane .product_ul li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 44px;
+  color: #828282;
+}
 .card .card-bottom .card-sidebar {
   width: 26%;
   background: #FFFFFF;

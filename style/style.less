@@ -560,6 +560,7 @@ footer {
       height: 430px;
       background: #F9F9F9;
       border-radius: 15px;
+
       img {
         border-radius: 15px;
         width: 100%;
@@ -716,6 +717,66 @@ footer {
 
     .card-info {
       width: 67%;
+
+      .nav-tabs {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+
+        .nav-link {
+          font-weight: normal;
+          font-size: 2vw;
+          line-height: 19px;
+          color: #828282;
+          border: none;
+          padding: 0;
+
+          &.active {
+            border: none;
+            color: #00AC4E;
+          }
+
+          &:hover {
+            border: none;
+          }
+
+        }
+
+      }
+
+      .tab-content {
+        .tab-pane {
+          .info {
+            margin-top: 40px;
+            margin-bottom: 22px;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 19px;
+          }
+
+          p {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 19px;
+            color: #828282;
+          }
+
+          .product_ul {
+            margin-top: 30px;
+            list-style: none;
+            padding: 0;
+
+            li {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 44px;
+              color: #828282;
+            }
+          }
+        }
+      }
+
+
     }
 
     .card-sidebar {
@@ -728,10 +789,11 @@ footer {
       flex-direction: column;
       justify-content: space-between;
 
-      .title{
+      .title {
         font-size: 15px;
         line-height: 17px;
       }
+
       .line {
         font-weight: 500;
         font-size: 15px;
@@ -739,7 +801,8 @@ footer {
         margin-top: 25px;
         display: flex;
         align-items: center;
-        img{
+
+        img {
           margin-right: 15px;
         }
       }
@@ -751,6 +814,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .range-line {
           width: 100%;
           height: 3px;
