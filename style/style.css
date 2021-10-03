@@ -238,8 +238,8 @@ header .menu-right .menu-user button {
   line-height: 22px;
 }
 .home-products .products-wrapper .product .description {
-  color: #333333;
-  font-size: 12.674px;
+  color: #828282;
+  font-size: 13px;
   line-height: 19px;
   margin-bottom: 10px;
 }
@@ -475,6 +475,7 @@ footer .footer-wrapper .footer-right img {
   display: inline-block;
 }
 .card .card-top .card-sidebar .reviews {
+  margin-top: -30px;
   font-weight: normal;
   font-size: 12px;
   line-height: 19px;
@@ -618,7 +619,7 @@ footer .footer-wrapper .footer-right img {
 .card .card-bottom .card-info .tab-content .tab-pane .product_ul li {
   font-weight: 400;
   font-size: 18px;
-  line-height: 44px;
+  line-height: 36px;
   color: #828282;
 }
 .card .card-bottom .card-sidebar {
