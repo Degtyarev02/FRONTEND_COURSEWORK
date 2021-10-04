@@ -174,7 +174,34 @@
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="product_reviews">
-                            Отзывы
+                            <div class="slider-reviews">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="rev_header">
+                                            <div class="avatar">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="rev_avatar">
+                                                <div class="rev_name">Иванов Иван</div>
+                                                <div class="rating">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="rev_footer">
+                                                <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор,
+                                                    привезли через 1,5 часа. Свежее, как будто было живое еще по дороге.
+                                                    Действительно натуральные продукты. Я обязательно буду заказывать
+                                                    дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+                                                <a href="">Читать полностью</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,6 +285,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     jQuery(function () {
         let j = jQuery;
@@ -274,6 +302,13 @@
                 j(addInput).val(--n + ' шт.');
             }
         });
-    });</script>
+    });
+
+
+    let swiperSlider = new Swiper(".slider-reviews", {
+        slidesPerView: 2,
+        spaceBetween: 16,
+    });
+</script>
 </body>
 </html>
