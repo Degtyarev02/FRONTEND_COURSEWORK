@@ -747,7 +747,6 @@ footer {
 
       .tab-content {
         .tab-pane {
-          padding: 0;
 
           .info {
             margin-top: 40px;
@@ -776,12 +775,37 @@ footer {
               color: #828282;
             }
           }
-          .slider-reviews{
+
+          .slider-reviews {
             overflow: hidden;
             position: relative;
-            .swiper-wrapper{
+
+            .swiper-wrapper {
               justify-content: flex-start;
-              .swiper-slide{
+
+              .swiper-slide {
+                background: #F2F2F2;
+                border-radius: 11px;
+                padding: 15px;
+
+                .rev_header {
+                  display: flex;
+
+                  .avatar {
+                    
+                  }
+
+                  .rev_avatar {
+                    .rating {
+                      span {
+                        background: url(../img/star.svg);
+                        width: 13px;
+                        height: 13px;
+                        display: inline-block;
+                      }
+                    }
+                  }
+                }
               }
             }
           }

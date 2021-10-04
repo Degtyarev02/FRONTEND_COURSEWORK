@@ -598,9 +598,6 @@ footer .footer-wrapper .footer-right img {
 .card .card-bottom .card-info .nav-tabs .nav-link:hover {
   border: none;
 }
-.card .card-bottom .card-info .tab-content .tab-pane {
-  padding: 0;
-}
 .card .card-bottom .card-info .tab-content .tab-pane .info {
   margin-top: 40px;
   margin-bottom: 22px;
@@ -631,6 +628,20 @@ footer .footer-wrapper .footer-right img {
 }
 .card .card-bottom .card-info .tab-content .tab-pane .slider-reviews .swiper-wrapper {
   justify-content: flex-start;
+}
+.card .card-bottom .card-info .tab-content .tab-pane .slider-reviews .swiper-wrapper .swiper-slide {
+  background: #F2F2F2;
+  border-radius: 11px;
+  padding: 15px;
+}
+.card .card-bottom .card-info .tab-content .tab-pane .slider-reviews .swiper-wrapper .swiper-slide .rev_header {
+  display: flex;
+}
+.card .card-bottom .card-info .tab-content .tab-pane .slider-reviews .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rating span {
+  background: url(../img/star.svg);
+  width: 13px;
+  height: 13px;
+  display: inline-block;
 }
 .card .card-bottom .card-sidebar {
   width: 26%;
