@@ -625,7 +625,6 @@ footer .footer-wrapper .footer-right img {
 .card .card-bottom .card-info .tab-content .tab-pane .slider-reviews {
   overflow: hidden;
   position: relative;
-  margin-bottom: 40px;
 }
 .card .card-bottom .card-info .tab-content .tab-pane .slider-reviews .swiper-wrapper {
   justify-content: flex-start;
@@ -668,13 +667,6 @@ footer .footer-wrapper .footer-right img {
   font-size: 14px;
   text-decoration-line: underline;
   color: #00AC4E;
-}
-.card .card-bottom .card-info .tab-content .tab-pane .send_review a {
-  background: #00AC4E;
-  padding: 12px 17px;
-  color: white;
-  font-size: 16px;
-  border-radius: 7px;
 }
 .card .card-bottom .card-sidebar {
   width: 26%;
@@ -750,5 +742,15 @@ footer .footer-wrapper .footer-right img {
   text-align: center;
   margin-top: 20px;
   margin-left: 26px;
+}
+.card .send_review {
+  margin-top: 30px;
+}
+.card .send_review a {
+  background: #00AC4E;
+  padding: 12px 17px;
+  color: white;
+  font-size: 16px;
+  border-radius: 7px;
 }
 /*# sourceMappingURL=style.css.map */
