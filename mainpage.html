@@ -75,9 +75,9 @@
                                 </a>
                             </div>
                             <div class="menu-user">
-                                <button class="profile">
+                                <a class="profile js-modal-open" href="#login-modal">
                                     <img src="img/person.svg" alt="#">
-                                </button>
+                                </a>
                                 <a href="#" class="cart">
                                     <img src="img/shopping-cart.svg">
                                 </a>
@@ -88,7 +88,6 @@
             </nav>
         </div>
     </header>
-
     <section class=" home-banner">
         <div class="container">
             <div class="swiper swiper-container">
@@ -366,6 +365,55 @@
             </div>
         </div>
     </section>
+
+    <div class="login-modal" id="login-modal">
+        <div class="modal__dialog">
+            <div class="modal__dialog-header">
+                <div class="modal__dialog-header-content">
+                    Войти
+                </div>
+
+                <div class="modal__dialog-header-close">
+                    <button class="js-modal-close modal__dialog-header-close-btn"><span>&times;</span></button>
+                </div>
+
+            </div>
+            <div class="modal__dialog-body">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis corporis, cumque deleniti
+                    deserunt dolorem explicabo in laudantium molestias nemo neque nostrum officia praesentium, quae,
+                    reprehenderit repudiandae sequi veniam voluptas.
+                </div>
+            </div>
+            <div class="modal__dialog-footer">
+                <button class="js-modal-close btn_close">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- <div class="register-modal" id="register-modal">
+        <div class="modal__dialog">
+            <div class="modal__dialog-header">
+                <div class="modal__dialog-header-content">
+                    Войти
+                </div>
+
+                <div class="modal__dialog-header-close">
+                    <button class="js-modal-close"><span>&times;</span></button>
+                </div>
+
+            </div>
+            <div class="modal__dialog-body">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis corporis, cumque deleniti
+                    deserunt dolorem explicabo in laudantium molestias nemo neque nostrum officia praesentium, quae,
+                    reprehenderit repudiandae sequi veniam voluptas.
+                </div>
+            </div>
+            <div class="modal__dialog-footer">
+                <button class="js-modal-close btn_close">Close</button>
+            </div>
+        </div>
+    </div>-->
     <footer>
         <div class="container">
             <div class="footer-wrapper">
@@ -411,6 +459,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="modal.js"></script>
 <script>
     const mySwiper = new Swiper(".swiper-container", {
         slidesPerView: 1,

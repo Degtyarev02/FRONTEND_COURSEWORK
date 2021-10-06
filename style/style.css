@@ -753,4 +753,53 @@ footer .footer-wrapper .footer-right img {
   font-size: 16px;
   border-radius: 7px;
 }
+.login-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 11;
+}
+.login-modal .modal__dialog {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #F2F2F2;
+  border-radius: 16px;
+  transition: 0.2s;
+  transform: translateY(-50px);
+  padding: 20px 40px;
+}
+.login-modal .modal__dialog .btn_close {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background: #00AC4E;
+  border: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.login-modal .modal__dialog .btn_close:hover {
+  background: #007937;
+}
+.login-modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.login-modal-active__dialog {
+  transform: translateY(0);
+}
 /*# sourceMappingURL=style.css.map */
