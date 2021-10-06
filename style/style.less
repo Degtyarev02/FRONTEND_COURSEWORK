@@ -960,7 +960,7 @@ footer {
   opacity: 0;
   transition: .2s;
   z-index: 11;
-  
+
 
   .modal__dialog {
     width: 300px;
@@ -992,13 +992,13 @@ footer {
     }
 
     &-header {
-
-      &-content {
-      }
-
       &-close {
+        float: right;
         &-btn {
-
+          font-size: 32px;
+          color: #00AC4E;
+          background: #F2F2F2;
+          border: none;
         }
       }
     }
@@ -1010,10 +1010,11 @@ footer {
     }
   }
 
-  &-active{
+  &-active {
     visibility: visible;
     opacity: 1;
-    &__dialog{
+
+    &__dialog {
       transform: translateY(0);
     }
   }

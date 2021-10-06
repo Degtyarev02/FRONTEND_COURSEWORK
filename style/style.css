@@ -795,6 +795,15 @@ footer .footer-wrapper .footer-right img {
 .login-modal .modal__dialog .btn_close:hover {
   background: #007937;
 }
+.login-modal .modal__dialog-header-close {
+  float: right;
+}
+.login-modal .modal__dialog-header-close-btn {
+  font-size: 32px;
+  color: #00AC4E;
+  background: #F2F2F2;
+  border: none;
+}
 .login-modal-active {
   visibility: visible;
   opacity: 1;
