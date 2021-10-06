@@ -769,16 +769,16 @@ footer .footer-wrapper .footer-right img {
   z-index: 11;
 }
 .login-modal .modal__dialog {
-  width: 300px;
+  width: 330px;
   height: 400px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: #F2F2F2;
+  background: #FFFFFF;
   border-radius: 16px;
   transition: 0.2s;
   transform: translateY(-50px);
-  padding: 20px 40px;
+  padding: 15px 30px;
 }
 .login-modal .modal__dialog .btn_close {
   display: inline-block;
@@ -795,14 +795,44 @@ footer .footer-wrapper .footer-right img {
 .login-modal .modal__dialog .btn_close:hover {
   background: #007937;
 }
-.login-modal .modal__dialog-header-close {
-  float: right;
+.login-modal .modal__dialog-header {
+  display: flex;
+  justify-content: flex-end;
 }
 .login-modal .modal__dialog-header-close-btn {
   font-size: 32px;
   color: #00AC4E;
-  background: #F2F2F2;
+  background: #FFFFFF;
   border: none;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  height: fit-content;
+}
+.login-modal .modal__dialog-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13px;
+}
+.login-modal .modal__dialog-body .login_greetings {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  margin-top: 13px;
+}
+.login-modal .modal__dialog-body-inputs_fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.login-modal .modal__dialog-body-inputs_fields .input {
+  width: 250px;
+  height: 51px;
+  background: #FCFCFC;
+  border: 0.8px solid #EBEBEB;
+  border-radius: 6px;
 }
 .login-modal-active {
   visibility: visible;

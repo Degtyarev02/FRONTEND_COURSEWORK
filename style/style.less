@@ -963,16 +963,16 @@ footer {
 
 
   .modal__dialog {
-    width: 300px;
+    width: 330px;
     height: 400px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: #F2F2F2;
+    background: #FFFFFF;
     border-radius: 16px;
     transition: .2s;
     transform: translateY(-50px);
-    padding: 20px 40px;
+    padding: 15px 30px;
 
     .btn_close {
       display: inline-block;
@@ -992,18 +992,50 @@ footer {
     }
 
     &-header {
-      &-close {
-        float: right;
-        &-btn {
-          font-size: 32px;
-          color: #00AC4E;
-          background: #F2F2F2;
-          border: none;
-        }
+      display: flex;
+      justify-content: flex-end;
+
+      &-close-btn {
+        font-size: 32px;
+        color: #00AC4E;
+        background: #FFFFFF;
+        border: none;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        height: fit-content;
       }
+
     }
 
     &-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 13px;
+
+      .login_greetings {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        margin-top: 13px;
+      }
+
+      &-inputs_fields {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        .input {
+          width: 250px;
+          height: 51px;
+          background: #FCFCFC;
+          border: 0.8px solid #EBEBEB;
+          border-radius: 6px;
+          
+        }
+      }
     }
 
     &-footer {
