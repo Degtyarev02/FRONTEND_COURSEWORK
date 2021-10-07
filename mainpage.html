@@ -96,13 +96,13 @@
                         <img src="img/food.png" alt="">
                         <h2>Подарок на первый заказ.</h2>
                         <p>Получите 500 баллов за подписку на рассылку</p>
-                        <a class="cart_button" href="#">Подписаться</a>
+                        <a class="cart_button newsletter-modal-open" href="#newsletter_modal">Подписаться</a>
                     </div>
                     <div class="swiper-slide block">
                         <img src="img/food2.png" alt="">
                         <h2>Закажите прямо сейчас.</h2>
                         <p>Только свежие блюда</p>
-                        <a class="cart_button" href="#">Оформить заказ</a>
+                        <a class="cart_button" href="#products">Оформить заказ</a>
                     </div>
                     <div class="swiper-slide block">
                         <img src="img/food31.jpg" alt="">
@@ -161,18 +161,17 @@
             </div>
         </div>
     </section>
-    <section class="home-products">
+    <section class="home-products" id="products">
         <div class="container ">
             <h3 class="all_products">Все товары</h3>
             <div class="products-wrapper">
                 <div class="product">
                     <div class="img">
-                        <img src="https://1.bp.blogspot.com/-RP9QSdwKCcg/XKcviRgA0UI/AAAAAAAABDc/v3s8QGL4NtUQYp7RYj26oklmoXIG7TAYACLcBGAs/s1600/golyashka-govyadina.jpg"
+                        <img src="img/meat.jpg"
                              alt="">
                     </div>
-                    <a href="#" class="title">Голень говядины</a>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur
-                        autem corporis cum.</p>
+                    <a href="#" class="title">Свиная шея, на гриле</a>
+                    <p class="description">Шея корейка, приправа "барбекю", масло растительное, морковь свежая.</p>
                     <div class="rating">
                         <span class="active"></span>
                         <span class="active"></span>
@@ -188,10 +187,11 @@
 
                 <div class="product">
                     <div class="img">
+                        <img src="img/meat2.jpg" alt="">
                     </div>
-                    <a href="#" class="title">Корейка ягненка</a>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur
-                        autem corporis cum.</p>
+                    <a href="#" class="title">Свиные ребра жаренные</a>
+                    <p class="description">Масло растительное, ребра свиные, бульон овощной, соус(сахар, соус табаско,
+                        концентрат лимонного сока, чеснок, имбирь, соус киккоман).</p>
                     <div class="rating">
                         <span class="active"></span>
                         <span class="active"></span>
@@ -206,10 +206,11 @@
                 </div>
 
                 <div class="product">
-                    <div class="img"></div>
-                    <a href="#" class="title">Ассорти из шашлыков</a>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur
-                        autem corporis cum.</p>
+                    <div class="img">
+                        <img src="img/meat3.jpg" alt="">
+                    </div>
+                    <a href="#" class="title">Крылья куриные жареные</a>
+                    <p class="description">Крылья куриные, специи, соус кикоман, соус терьяки, масло растительное.</p>
                     <div class="rating">
                         <span class="active"></span>
                         <span class="active"></span>
@@ -218,7 +219,7 @@
                         <span></span>
                     </div>
                     <div class="price">
-                        <b>2 500₽</b> <span>За 1000гр.</span>
+                        <b>800₽</b> <span>За 6шт.</span>
                     </div>
                     <a href="#" class="to-cart">В корзину</a>
                 </div>
@@ -365,52 +366,6 @@
             </div>
         </div>
     </section>
-
-    <div class="login-modal" id="login-modal">
-        <div class="modal__dialog">
-            <div class="modal__dialog-header">
-                <button class="js-modal-close modal__dialog-header-close-btn">&times;</button>
-            </div>
-            <div class="modal__dialog-body">
-                <img class="modal__dialog-body-person" src="img/person.svg" alt="">
-                <h2 class="login_greetings">Войти в личный кабинет</h2>
-                <div class="modal__dialog-body-inputs_fields">
-                    <input class="input input-tel" type="tel" placeholder="Телефон">
-                    <input class="input input-password" type="password" placeholder="Пароль">
-                </div>
-            </div>
-            <div class="modal__dialog-footer">
-                <a href="#">Забыли пароль?</a>
-                <button class="js-modal-close btn_close">Войти</button>
-                <div><p>Впервые у нас?</p><a href="#">Зарегистрироваться</a></div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- <div class="register-modal" id="register-modal">
-         <div class="modal__dialog">
-             <div class="modal__dialog-header">
-                 <div class="modal__dialog-header-content">
-                     Войти
-                 </div>
-
-                 <div class="modal__dialog-header-close">
-                     <button class="js-modal-close"><span>&times;</span></button>
-                 </div>
-
-             </div>
-             <div class="modal__dialog-body">
-                 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis corporis, cumque deleniti
-                     deserunt dolorem explicabo in laudantium molestias nemo neque nostrum officia praesentium, quae,
-                     reprehenderit repudiandae sequi veniam voluptas.
-                 </div>
-             </div>
-             <div class="modal__dialog-footer">
-                 <button class="js-modal-close btn_close">Close</button>
-             </div>
-         </div>
-     </div>-->
     <footer>
         <div class="container">
             <div class="footer-wrapper">
@@ -447,6 +402,45 @@
             </div>
         </div>
     </footer>
+
+    <div class="login-modal" id="login-modal">
+        <div class="modal__dialog">
+            <div class="modal__dialog-header">
+                <button class="js-modal-close modal__dialog-header-close-btn">&times;</button>
+            </div>
+            <div class="modal__dialog-body">
+                <img class="modal__dialog-body-person" src="img/person_login_modal.svg" alt="">
+                <h2 class="login_greetings">Войти в личный кабинет</h2>
+                <div class="modal__dialog-body-inputs_fields">
+                    <input class="input input-tel" type="tel" placeholder="Телефон">
+                    <input class="input input-password" type="password" placeholder="Пароль">
+                </div>
+            </div>
+            <div class="modal__dialog-footer">
+                <a href="#">Забыли пароль?</a>
+                <button class="js-modal-close btn_close">Войти</button>
+                <div class="registration_message">Впервые у нас? <a href="#">Зарегистрироваться</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-modal newsletter-modal" id="newsletter_modal">
+        <div class="modal__dialog modal_dialog_newsletter">
+            <div class="modal__dialog-header">
+                <button class="js-modal-close modal__dialog-header-close-btn">&times;</button>
+            </div>
+            <div class="modal__dialog-body">
+                <img class="modal__dialog-body-person" src="img/letter_modal.svg" alt="">
+                <h2 class="login_greetings">Подпишитесь на нашу рассылку и получите промокод на 500 RUB!</h2>
+                <div class="modal__dialog-body-inputs_fields">
+                    <input class="input input-email" type="email" placeholder="E-mail">
+                </div>
+            </div>
+            <div class="modal__dialog-footer">
+                <button class="js-modal-close btn_close btn_close-newsletter_send">Отправить</button>
+            </div>
+        </div>
+    </div>
 
 
 </div>

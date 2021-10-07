@@ -107,7 +107,7 @@
                         Кол-во отзывов: 0
                     </div>
                     <div class="price">
-                        <span>Цена за упаковку:</span><b>1 000 ₽</b>
+                        <span>Цена за упаковку:</span><b >1000 ₽</b>
                     </div>
                     <div class="price">
                         <span>Кол-во шт в упаковке:</span><b>4 шт.</b>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="to-pay">
                         <span>Итого к оплате</span>
-                        <b>1 000 ₽</b>
+                        <b id="price">1 000 ₽</b>
                     </div>
                     <div class="pay-block">
                         <button class="pay">Купить</button>
@@ -367,15 +367,19 @@
         let j = jQuery;
         let addInput = '#qty';
         let n = 1;
+        let startValue = 1000;
+        document.getElementById("price").textContent = 1000 + " ₽";
         j(addInput).val(n + ' шт.');
 
         j('.plus').on('click', function () {
             j(addInput).val(++n + ' шт.');
+            document.getElementById("price").textContent = 1000 * n + " ₽";
         })
 
         j('.min').on('click', function () {
             if (n > 0) {
                 j(addInput).val(--n + ' шт.');
+                document.getElementById("price").textContent = 1000 * n + " ₽";
             }
         });
     });
