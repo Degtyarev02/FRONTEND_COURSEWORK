@@ -99,11 +99,18 @@ header .menu-right .menu-contact a img {
 header .menu-right .menu-user a,
 header .menu-right .menu-user button {
   margin-left: 30px;
-}
-header .menu-right .menu-user button {
-  background: none;
   border: none;
-  padding: 0;
+  background: white;
+}
+header .menu-right .menu-user a img,
+header .menu-right .menu-user button img {
+  transition: 0.5s;
+}
+header .menu-right .menu-user a img:hover,
+header .menu-right .menu-user button img:hover {
+  -webkit-transform: rotateZ(-20deg);
+  -ms-transform: rotateZ(-20deg);
+  transform: rotateZ(-20deg);
 }
 .home-banner {
   padding-top: 60px;
@@ -763,7 +770,7 @@ footer .footer-wrapper .footer-right img {
   visibility: hidden;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.5s;
   z-index: 11;
 }
 .login-modal .modal__dialog {
@@ -774,7 +781,7 @@ footer .footer-wrapper .footer-right img {
   overflow: hidden;
   background: #FFFFFF;
   border-radius: 16px;
-  transition: 0.2s;
+  transition: 0.7s;
   transform: translateY(-50px);
   padding: 15px 30px;
 }
@@ -846,9 +853,8 @@ footer .footer-wrapper .footer-right img {
   color: #00AC4E;
 }
 .login-modal .modal__dialog-footer .btn_close {
+  text-align: center;
   margin-top: 11px;
-  width: 121px;
-  height: 40px;
   display: inline-block;
   padding: 8px 16px;
   font-size: 16px;
@@ -883,6 +889,6 @@ footer .footer-wrapper .footer-right img {
   transform: translateY(0);
 }
 .modal_dialog_newsletter {
-  height: 270px!important;
+  height: 270px !important;
 }
 /*# sourceMappingURL=style.css.map */
