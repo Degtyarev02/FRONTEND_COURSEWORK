@@ -131,10 +131,11 @@ header {
 
 
     .menu-user {
-      a, button{
+      a, button {
         margin-left: 30px;
         border: none;
         background: white;
+
         img {
           transition: .5s;
 
@@ -966,8 +967,8 @@ footer {
 
 
   .modal__dialog {
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -1039,6 +1040,40 @@ footer {
             background: url(../img/email_input_modal.svg) no-repeat 10px center;
           }
 
+        }
+      }
+
+      &-radio-check {
+        span {
+          font-size: 10px;
+          line-height: 11px;
+          text-align: center;
+          color: #C6C6C6;
+        }
+
+        a {
+          font-size: 10px;
+          line-height: 11px;
+          text-align: center;
+          color: #0BAC4E;
+        }
+
+        .suggestions {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          input{
+            height: 12px;
+            width: 12px;
+            background: #FCFCFC;
+            margin-right: 10px;
+          }
+
+          .conditions {
+            display: flex;
+            flex-wrap:wrap;
+          }
         }
       }
     }

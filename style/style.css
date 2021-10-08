@@ -774,8 +774,8 @@ footer .footer-wrapper .footer-right img {
   z-index: 11;
 }
 .login-modal .modal__dialog {
-  width: 350px;
-  height: 400px;
+  width: 400px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -838,6 +838,33 @@ footer .footer-wrapper .footer-right img {
 }
 .login-modal .modal__dialog-body-inputs_fields .input-email {
   background: url(../img/email_input_modal.svg) no-repeat 10px center;
+}
+.login-modal .modal__dialog-body-radio-check span {
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+  color: #C6C6C6;
+}
+.login-modal .modal__dialog-body-radio-check a {
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+  color: #0BAC4E;
+}
+.login-modal .modal__dialog-body-radio-check .suggestions {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.login-modal .modal__dialog-body-radio-check .suggestions input {
+  height: 12px;
+  width: 12px;
+  background: #FCFCFC;
+  margin-right: 10px;
+}
+.login-modal .modal__dialog-body-radio-check .suggestions .conditions {
+  display: flex;
+  flex-wrap: wrap;
 }
 .login-modal .modal__dialog-footer {
   display: flex;
