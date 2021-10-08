@@ -1044,35 +1044,50 @@ footer {
       }
 
       &-radio-check {
-        span {
-          font-size: 10px;
-          line-height: 11px;
+        .suggestions {
+          margin-top: 19px;
+          display: flex;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 15px;
           text-align: center;
           color: #C6C6C6;
-        }
 
-        a {
-          font-size: 10px;
-          line-height: 11px;
-          text-align: center;
-          color: #0BAC4E;
-        }
+          input {
+            position: relative;
+            opacity: 0;
 
-        .suggestions {
-          display: flex;
-          align-items: center;
-          margin-top: 10px;
+            &:checked {
+              ~ label {
+                &:before {
+                  background: #00AC4E;
+                  border: 1.5px solid #FCFCFC;
+                }
+              }
+            }
 
-          input{
-            height: 12px;
-            width: 12px;
-            background: #FCFCFC;
-            margin-right: 10px;
-          }
+            ~ label {
+              margin-left: 15px;
+              position: relative;
+              text-align: left;
+              a{
+                color: #00AC4E;
+              }
 
-          .conditions {
-            display: flex;
-            flex-wrap:wrap;
+              &:before {
+                border-radius: 50%;
+                content: '';
+                width: 15px;
+                height: 15px;
+                background: #FCFCFC;
+                border: 1.5px solid #EBEBEB;
+                box-sizing: border-box;
+                position: absolute;
+                top: 0;
+                left: -30px;
+              }
+            }
+
           }
         }
       }
