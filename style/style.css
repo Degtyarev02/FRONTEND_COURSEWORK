@@ -94,7 +94,6 @@ header .menu-right .menu-contact a {
 }
 header .menu-right .menu-contact a img {
   margin-right: 10px;
-  padding-bottom: 4px;
 }
 header .menu-right .menu-user a,
 header .menu-right .menu-user button {
@@ -927,5 +926,83 @@ footer .footer-wrapper .footer-right img {
 }
 .modal_dialog_newsletter {
   height: 270px !important;
+}
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+    position: relative;
+  }
+  header nav.navbar {
+    height: 50px;
+    padding: 0;
+    position: static;
+  }
+  header nav.navbar .navbar-toggler {
+    padding: 0;
+    border: none;
+    order: 1;
+  }
+  header nav.navbar .navbar-toggler span {
+    background-image: url(../img/menu_adaptive.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  header nav.navbar .navbar-brand {
+    order: 2;
+  }
+  header nav.navbar .navbar-brand img {
+    height: 34px;
+  }
+  header nav.navbar .menu-right {
+    order: 3;
+    margin-right: 0;
+  }
+  header nav.navbar .menu-right .menu-user a,
+  header nav.navbar .menu-right .menu-user button {
+    margin-left: 0;
+  }
+  header nav.navbar .menu-right .menu-user a img,
+  header nav.navbar .menu-right .menu-user button img {
+    width: 20px;
+  }
+  header nav.navbar .menu-right .menu-user .profile {
+    margin: 0 20px;
+  }
+  header nav.navbar .menu-right .menu-contact {
+    margin-right: 0;
+  }
+  header nav.navbar .menu-right .menu-contact a img {
+    margin: 0;
+    width: 20px;
+  }
+  header nav.navbar .menu-right .menu-contact a span {
+    display: none;
+  }
+  header nav.navbar .navbar-collapse {
+    position: fixed;
+    left: 0;
+    padding-top: 40px;
+    top: 0;
+    background: #343E48;
+    width: 70%;
+    height: 100vh;
+    border-radius: 0 8px 8px 0;
+  }
+  header nav.navbar .navbar-collapse:before {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    width: 320px;
+  }
+  section,
+  footer {
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 /*# sourceMappingURL=style.css.map */
