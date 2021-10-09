@@ -930,7 +930,8 @@ footer .footer-wrapper .footer-right img {
 @media (max-width: 767px) {
   header {
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0;
     border-radius: 0 0 8px 8px;
   }
   header nav.navbar {
@@ -1047,7 +1048,7 @@ footer .footer-wrapper .footer-right img {
     line-height: 16px;
   }
   .home-banner {
-    margin-top: 0;
+    padding-top: 10px;
   }
   .home-banner .block {
     height: 100px;
@@ -1056,18 +1057,20 @@ footer .footer-wrapper .footer-right img {
   .home-banner .block h2 {
     font-size: 10px;
     line-height: 12px;
+    margin-bottom: 3px;
   }
   .home-banner .block p {
     font-size: 10px;
     line-height: 10px;
     margin-bottom: 0;
+    padding-bottom: 5px;
   }
-  .home-banner .block a {
+  .home-banner .block .cart_button {
     width: 49px;
     height: 10px;
-    margin-top: 20px;
     font-size: 10px;
     line-height: 10px;
+    padding: 5px 16px;
   }
   .home-banner .block img {
     width: 50%;
