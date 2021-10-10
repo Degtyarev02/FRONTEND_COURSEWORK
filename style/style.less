@@ -1167,6 +1167,7 @@ footer {
     height: 12px;
     display: flex;
     align-items: center;
+
     span {
       width: 7px !important;
       height: 7px !important;
@@ -1361,6 +1362,28 @@ footer {
     }
   }
 
+  .home-menu {
+    .container {
+      .swiper-container-menu {
+        .swiper-slide {
+          font-size: 10px;
+          line-height: 12px;
+          margin-right: 20px !important;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .swiper-button-next {
+          z-index: -1;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
   .home-products {
     .products-wrapper {
       .product {
@@ -1387,6 +1410,7 @@ footer {
         .price {
           height: 15px;
           margin-bottom: 0;
+
           b {
             font-size: 8px;
             margin-right: 0;
@@ -1394,6 +1418,7 @@ footer {
 
           span {
             font-size: 6px;
+            margin-left: auto;
           }
         }
 
@@ -1415,7 +1440,7 @@ footer {
       height: 100px;
       width: 90%;
       padding: 26px 20px;
-      background-size: 160px;
+      background-size: 140px;
 
       .title {
         font-weight: normal;
@@ -1431,6 +1456,85 @@ footer {
         padding: 5px 15px;
         font-size: 8px;
         line-height: 10px;
+      }
+    }
+  }
+
+  footer {
+    .footer-wrapper {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .footer-left {
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+          width: 48%;
+        }
+
+        .phones {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+
+          .phone-item {
+            margin-right: 0;
+            margin-bottom: 10px;
+
+            span {
+              font-size: 8px;
+              line-height: 11px;
+            }
+
+            a {
+              font-size: 12px !important;
+              line-height: 13px !important;
+            }
+          }
+        }
+
+        .line-email {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: flex-end;
+        }
+
+        .work-time {
+          font-size: 10px;
+          line-height: 13px;
+          margin: 0;
+        }
+
+        .work-email {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .footer-center{
+        .social{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          a{
+            font-size: 10px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+
+      .footer-right{
+        .registration{
+          img{
+            width: 20px;
+            height: 20px;
+          }
+          a{
+            font-size: 10px;
+          }
+        }
       }
     }
   }

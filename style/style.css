@@ -1090,6 +1090,19 @@ footer .footer-wrapper .footer-right img {
     width: 55%;
     height: 100%;
   }
+  .home-menu .container .swiper-container-menu .swiper-slide {
+    font-size: 10px;
+    line-height: 12px;
+    margin-right: 20px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .home-menu .container .swiper-container-menu .swiper-button-next {
+    z-index: -1;
+  }
+  .home-menu .container .swiper-container-menu .swiper-button-next:after {
+    display: none;
+  }
   .home-products .products-wrapper .product {
     margin-right: 0;
     width: 87px;
@@ -1118,6 +1131,7 @@ footer .footer-wrapper .footer-right img {
   }
   .home-products .products-wrapper .product .price span {
     font-size: 6px;
+    margin-left: auto;
   }
   .home-products .products-wrapper .product .to-cart {
     width: 60px;
@@ -1133,7 +1147,7 @@ footer .footer-wrapper .footer-right img {
     height: 100px;
     width: 90%;
     padding: 26px 20px;
-    background-size: 160px;
+    background-size: 140px;
   }
   .delivery .block .title {
     font-weight: normal;
@@ -1148,6 +1162,63 @@ footer .footer-wrapper .footer-right img {
     padding: 5px 15px;
     font-size: 8px;
     line-height: 10px;
+  }
+  footer .footer-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  footer .footer-wrapper .footer-left {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-wrapper .footer-left > div {
+    width: 48%;
+  }
+  footer .footer-wrapper .footer-left .phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  footer .footer-wrapper .footer-left .phones .phone-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  footer .footer-wrapper .footer-left .phones .phone-item span {
+    font-size: 8px;
+    line-height: 11px;
+  }
+  footer .footer-wrapper .footer-left .phones .phone-item a {
+    font-size: 12px !important;
+    line-height: 13px !important;
+  }
+  footer .footer-wrapper .footer-left .line-email {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  footer .footer-wrapper .footer-left .work-time {
+    font-size: 10px;
+    line-height: 13px;
+    margin: 0;
+  }
+  footer .footer-wrapper .footer-left .work-email a {
+    font-size: 12px;
+  }
+  footer .footer-wrapper .footer-center .social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer .footer-wrapper .footer-center .social a {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+  footer .footer-wrapper .footer-right .registration img {
+    width: 20px;
+    height: 20px;
+  }
+  footer .footer-wrapper .footer-right .registration a {
+    font-size: 10px;
   }
   .container {
     width: 320px;
