@@ -1333,6 +1333,9 @@ footer .footer-wrapper .footer-right img {
     font-size: 15px;
     line-height: 10px;
   }
+  .card .card-bottom .card-info .tab-content > .tab-pane {
+    margin-bottom: 10px;
+  }
   .card .card-bottom .card-info .tab-content > .tab-pane .product_ul {
     margin-bottom: 15px;
   }
