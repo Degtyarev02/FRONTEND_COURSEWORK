@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Продукт</title>
+    <title>Салат "Цезарь" с курицей</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -91,11 +91,11 @@
         <div class="container">
             <div class="card-top">
                 <div class="card-img">
-                    <img src="img/food3.jpg" alt="">
+                    <img src="img/salad2.jpg" alt="">
                 </div>
                 <div class="card-sidebar">
                     <h1 class="title">
-                        Пельмени 250гр
+                        Салат "Цезарь" с курицей 230г
                     </h1>
                     <div class="rating">
                         <span class="active"></span>
@@ -105,13 +105,13 @@
                         <span></span>
                     </div>
                     <div class="reviews">
-                        Кол-во отзывов: 0
+                        Кол-во отзывов: 8
                     </div>
                     <div class="price">
-                        <span>Цена за упаковку:</span><b>1000 ₽</b>
+                        <span>Цена за 230гр:</span><b>500 ₽</b>
                     </div>
                     <div class="price">
-                        <span>Кол-во шт в упаковке:</span><b>4 шт.</b>
+                        <span>Кол-во шт в порции:</span><b>1 шт.</b>
                     </div>
                     <div class="price">
                         <span>Количество</span>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="to-pay">
                         <span>Итого к оплате</span>
-                        <b id="price">1 000 ₽</b>
+                        <b id="price">1 050 ₽</b>
                     </div>
                     <div class="pay-block">
                         <button class="pay">Купить</button>
@@ -157,21 +157,19 @@
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                              aria-labelledby="about_product">
                             <h2 class="info">Описание</h2>
-                            <p>Мало кто пробовал пельмени с рыбой. А все потому, что они мало распространены. Многие в
-                                общем-то и не догадываются, что пельмени могут быть с иными начинками, нежели лишь с
-                                мясным фаршем. Объективный плюс данного блюда в том, что оно может стать новым на вашем
-                                столе и значительно разнообразит ваш рацион. К тому же пельмени такие получаются
-                                вкусными, сытными и наваристыми. Любители рыбы его с радостью встретят и с особым
-                                удовольствием скушают.</p>
-                            <p>Пшеничная мука, яйцо, фарш из лосося с гребешком, лук, чеснок.</p>
+                            <p>Классический салат "Цезарь" - это салат ромен, крутоны из багета и тёртый пармезан,
+                                заправленные фирменным соусом. Наши повора нарежут этот салат лучше, чем древнеримского
+                                полководца.</p>
+                            <p>Филе куриное, салат айсберг, гренки пшеничные, сыр пармезан, соус "Цезарь" (майонез,
+                                уксус винный, крем из анчоусов, анчоусы в масле, каперсы консервированные).</p>
                         </div>
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="product_params">
                             <ul class="product_ul">
-                                <li><b>Калории:</b> 420</li>
-                                <li><b>Жиры:</b> 420</li>
-                                <li><b>Белки:</b> 420</li>
-                                <li><b>Углеводы:</b> 420</li>
-                                <li><b>Масса:</b> 420 грамм</li>
+                                <li><b>Калории:</b> 124</li>
+                                <li><b>Жиры:</b> 7.4 г.</li>
+                                <li><b>Белки:</b> 12.3 г.</li>
+                                <li><b>Углеводы:</b> 3.2 г.</li>
+                                <li><b>Масса:</b> 300 г.</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="product_reviews">
@@ -369,19 +367,19 @@
         let j = jQuery;
         let addInput = '#qty';
         let n = 1;
-        let startValue = 1000;
-        document.getElementById("price").textContent = 1000 + " ₽";
+        let startValue = 500;
+        document.getElementById("price").textContent = startValue + " ₽";
         j(addInput).val(n + ' шт.');
 
         j('.plus').on('click', function () {
             j(addInput).val(++n + ' шт.');
-            document.getElementById("price").textContent = 1000 * n + " ₽";
+            document.getElementById("price").textContent = startValue * n + " ₽";
         })
 
         j('.min').on('click', function () {
             if (n > 0) {
                 j(addInput).val(--n + ' шт.');
-                document.getElementById("price").textContent = 1000 * n + " ₽";
+                document.getElementById("price").textContent = startValue * n + " ₽";
             }
         });
     });

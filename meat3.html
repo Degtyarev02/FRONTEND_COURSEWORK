@@ -91,11 +91,11 @@
         <div class="container">
             <div class="card-top">
                 <div class="card-img">
-                    <img src="img/food3.jpg" alt="">
+                    <img src="img/meat3.jpg" alt="">
                 </div>
                 <div class="card-sidebar">
                     <h1 class="title">
-                        Пельмени 250гр
+                        Крылья куриные 6шт.
                     </h1>
                     <div class="rating">
                         <span class="active"></span>
@@ -105,13 +105,13 @@
                         <span></span>
                     </div>
                     <div class="reviews">
-                        Кол-во отзывов: 0
+                        Кол-во отзывов: 4
                     </div>
                     <div class="price">
-                        <span>Цена за упаковку:</span><b>1000 ₽</b>
+                        <span>Цена за 6шт:</span><b>800 ₽</b>
                     </div>
                     <div class="price">
-                        <span>Кол-во шт в упаковке:</span><b>4 шт.</b>
+                        <span>Кол-во шт в порции:</span><b>6 шт.</b>
                     </div>
                     <div class="price">
                         <span>Количество</span>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="to-pay">
                         <span>Итого к оплате</span>
-                        <b id="price">1 000 ₽</b>
+                        <b id="price">800 ₽</b>
                     </div>
                     <div class="pay-block">
                         <button class="pay">Купить</button>
@@ -157,21 +157,17 @@
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                              aria-labelledby="about_product">
                             <h2 class="info">Описание</h2>
-                            <p>Мало кто пробовал пельмени с рыбой. А все потому, что они мало распространены. Многие в
-                                общем-то и не догадываются, что пельмени могут быть с иными начинками, нежели лишь с
-                                мясным фаршем. Объективный плюс данного блюда в том, что оно может стать новым на вашем
-                                столе и значительно разнообразит ваш рацион. К тому же пельмени такие получаются
-                                вкусными, сытными и наваристыми. Любители рыбы его с радостью встретят и с особым
-                                удовольствием скушают.</p>
-                            <p>Пшеничная мука, яйцо, фарш из лосося с гребешком, лук, чеснок.</p>
+                            <p>Куриные крылья - это то блюдо, которое будет в радость как в шумной компании за
+                                просмотром футбольного матча, так и на умиротворенной природе солнечным воскресеньем. </p>
+                            <p>Крылья куриные, специи, соус кикоман, соус терьяки, масло растительное.</p>
                         </div>
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="product_params">
                             <ul class="product_ul">
-                                <li><b>Калории:</b> 420</li>
-                                <li><b>Жиры:</b> 420</li>
-                                <li><b>Белки:</b> 420</li>
-                                <li><b>Углеводы:</b> 420</li>
-                                <li><b>Масса:</b> 420 грамм</li>
+                                <li><b>Калории:</b> 634</li>
+                                <li><b>Жиры:</b> 62.4 г.</li>
+                                <li><b>Белки:</b> 13.5 г.</li>
+                                <li><b>Углеводы:</b> 4.0 г.</li>
+                                <li><b>Масса:</b> 300 г.</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="product_reviews">
@@ -369,19 +365,19 @@
         let j = jQuery;
         let addInput = '#qty';
         let n = 1;
-        let startValue = 1000;
-        document.getElementById("price").textContent = 1000 + " ₽";
+        let startValue = 800;
+        document.getElementById("price").textContent = startValue + " ₽";
         j(addInput).val(n + ' шт.');
 
         j('.plus').on('click', function () {
             j(addInput).val(++n + ' шт.');
-            document.getElementById("price").textContent = 1000 * n + " ₽";
+            document.getElementById("price").textContent = startValue * n + " ₽";
         })
 
         j('.min').on('click', function () {
             if (n > 0) {
                 j(addInput).val(--n + ' шт.');
-                document.getElementById("price").textContent = 1000 * n + " ₽";
+                document.getElementById("price").textContent = startValue * n + " ₽";
             }
         });
     });
