@@ -162,6 +162,10 @@ header .menu-right .menu-user button img:hover {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
+  transition: 0.3s;
+}
+.home-banner .block .cart_button:hover {
+  background: #099443;
 }
 .home-menu .container {
   overflow-x: hidden;
@@ -200,6 +204,7 @@ header .menu-right .menu-user button img:hover {
   color: #4F4f4F;
   width: auto !important;
   padding: 8px 16px;
+  transition: 0.5s;
 }
 .home-menu .container .swiper-container-menu a:active,
 .home-menu .container .swiper-container-menu a:hover {
@@ -278,6 +283,10 @@ header .menu-right .menu-user button img:hover {
   top: 846px;
   text-align: center;
   padding: 9px 28px;
+  transition: 0.5s;
+}
+.home-products .products-wrapper .product .to-cart:hover {
+  background: #099443;
 }
 .delivery {
   padding: 70px 0;
@@ -318,6 +327,10 @@ header .menu-right .menu-user button img:hover {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  transition: 0.5s;
+}
+.delivery .block a:hover {
+  background: #099443;
 }
 footer {
   background: #0BAC4E;
@@ -1102,6 +1115,12 @@ footer .footer-wrapper .footer-right img {
   }
   .home-menu .container .swiper-container-menu .swiper-button-next:after {
     display: none;
+  }
+  .home-products .all_products {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 20px;
+    margin-bottom: 12px;
   }
   .home-products .products-wrapper .product {
     margin-right: 0;
