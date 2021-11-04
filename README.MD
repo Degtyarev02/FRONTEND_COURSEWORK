@@ -33,16 +33,14 @@ document.addEventListener('click', (event) => {
     if (event.target.closest(`.${CLASS_LIST_LOGIN.TRIGGER_OPEN_LOGIN}`)) {
         console.log('open');
         event.preventDefault();
-        const target = event.target.closest(.$
-        {
-            CLASS_LIST_LOGIN.TRIGGER_OPEN_LOGIN
-        }
-    )
-        ;
+
+        const target = event.target.closest(`.${CLASS_LIST_LOGIN.TRIGGER_OPEN_LOGIN}`);
         const modalId = target.getAttribute('href').replace('#', '');
         const modal = document.getElementById(modalId);
         document.body.style.overflow = 'hidden';
+
         modal.classList.add(CLASS_LIST_LOGIN.MODAL_ACTIVE_LOGIN);
+
     }
     //close
     if (event.target.closest(`.${CLASS_LIST_LOGIN.TRIGGER_CLOSE_LOGIN}`) ||
