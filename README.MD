@@ -11,12 +11,12 @@
 
 ### Главная страница, на которой располагается каталог и самые свежие предложения
 
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](img/img.png)
+![img_1.png](img/img_1.png)
 
 ### Для каждого блюда своя страница
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 ### Модальные окна для регистрации и входа написаны на Java Script
 
@@ -57,11 +57,11 @@ document.addEventListener('click', (event) => {
 });
 ```
 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 ### Сайт адаптирован под современные устройства
 
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
+![img_4.png](img/img_4.png)
+![img_5.png](img/img_5.png)
+![img_6.png](img/img_6.png)
 
